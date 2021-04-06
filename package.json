@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
+    "dev2": "parcel cliq.html",
+    "dev3": "parcel track.html",
     "prod": "parcel build index.html",
+    "prod2": "parcel build cliq.html",
+    "prod3": "parcel build track.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +19,7 @@
     "locomotive-scroll": "^4.1.1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.8"
   }
 }
