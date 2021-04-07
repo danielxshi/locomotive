@@ -19,16 +19,12 @@ body{
     overflow-x: hidden;
 }
 
-article{
-
-}
-
 article .article-full-page{
     height: 100vh;
     margin-top: 20vh;
 }
 
-.article-full-page h1{
+.article-full-page h2{
     letter-spacing: 0.2rem;
 }
 
@@ -66,9 +62,9 @@ li {
     margin: auto;
   
     transition: 0.3s;
-    border-radius: 20px;
-    color: #858585;
-    /* color: #FAFBFF; */
+    border-radius: 10px;
+    /* color: #858585; */
+    color: #FAFBFF;
     background-color: #312E37;
     box-shadow:  8px 8px 16px #242228, -8px -8px 16px #3E3A46;
     text-align: center;
@@ -81,8 +77,8 @@ li {
     /* background-color: #312E37; */
     /* box-shadow: -8px -8px 16px #3E3A46, 8px 8px 16px #242228; */
     /* cursor: pointer; */
-    /* color: #FFD400; */
-    color:#FAFFFD;
+    color: #FFD400;
+    /* color:#FAFFFD; */
 }
 .primary-btn:active{
     /* color: #FAFBFF; */
@@ -104,6 +100,19 @@ li {
 .portfolio-intro{
     margin-top: 20vh;
     height: 80vh;
+    display: flex;
+}
+
+.portfolio-text-banner{
+    height: 100vh;
+    display: flex;
+    margin-bottom: 20vh;
+    grid-column-start: 2;
+    grid-column-end: 16;
+}
+
+.portfolio-text-banner-wrapper{
+    margin: auto;
 }
 
 .personal {
@@ -263,15 +272,31 @@ h1{
     color: #FAFFFD;
 }
 
+.portfolio-intro-header{
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif;
+    /* color: #312e37; */
+    color: #FAFFFD;
+}
+
+.portfolio-header-center{
+    text-align: center;
+    font-size: 5rem;
+    margin: auto;
+}
+
 h2{
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     /* color: #373737; */
     color: #FAFFFD;
 }
 
 .hero img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
     transition-duration: 0.4s;
 }
 
@@ -358,11 +383,6 @@ header{
     font-size: 2rem;
 }
 
-.project-details-large-header{
-    text-align: center;
-    font-size: 5rem;
-}
-
 .project-details-description{
     line-height: 2.5rem;
 }
@@ -395,6 +415,13 @@ header{
 
 /* media queries */
 @media only screen and (min-width: 72em) {
+    .portfolio-text-banner h1{
+        font-size: 18rem;
+    }
+    .project-details-large-header{
+        text-align: center;
+        font-size: 5rem;
+    }
     nav{    
         margin: 2.5% auto;
         width: 1240px;
@@ -431,7 +458,7 @@ header{
     .desktop-project-header{
         display:flex;
         justify-content: space-between;
-        width: 70%;
+        width: 100%;
         max-width: 32em;
         font-size: 5rem;
         margin-top: 0;
@@ -571,13 +598,14 @@ header{
     section {
         padding: 3rem 1.75rem;
     }
-    .article-full-page h1{
+    .article-full-page h2{
         line-height: 2em;
         font-size: 1.5rem;
     }
-    .portfolio-intro h1{
+    /* replace */
+    /* .portfolio-intro h1{
         font-size: 2rem;
-    }
+    } */
     .portfolio-intro h2{
         font-size: 1.2rem;
     }

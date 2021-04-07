@@ -5,4 +5,3 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
-console.log("ya");

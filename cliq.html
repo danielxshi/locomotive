@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/grid.css">
 </head>
-<body >
+<body data-scroll-container>
     <header>
         <div class="logo">
           <img src="images/icons/nav-mob.svg" id="hamburger-cta" alt="Logo" title="Logo" />
@@ -34,98 +34,102 @@
               </ul>
         </nav>
     </header>
-    <main>
-        <div class="grid-container">
-            <div class="col-center-6 project-intro-container">
-                <h1 class="project-header">CLIQ</h1>
-                <p class="project-details-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero magnam commodi dolor perferendis animi tempora iure architecto eligendi explicabo, iste quod id repellat esse, dolorum suscipit possimus, obcaecati quasi.</p>
-                <p class="team-details">Team: A, B, C, D</p>
+    <main >
+        <div data-scroll class="grid-container">
+            <div data-scroll-section class="col-center-6 project-intro-container">
+                <h1 data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" class="project-header">CLIQ</h1>
+                <p data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" class="project-details-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero magnam commodi dolor perferendis animi tempora iure architecto eligendi explicabo, iste quod id repellat esse, dolorum suscipit possimus, obcaecati quasi.</p>
+                <p data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" class="team-details">Team: A, B, C, D</p>
                 <div class="project-tools-wrapper">
-                    <p>Project Tools</p>
+                    <p data-scroll>Project Tools</p>
                     <ul class="project-tools">
-                        <li><div class="color-block"></div></li>
-                        <li><div class="color-block"></div></li>
-                        <li><div class="color-block"></div></li>
+                        <li data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" ><div class="color-block"></div></li>
+                        <li data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" ><div class="color-block"></div></li>
+                        <li data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" ><div class="color-block"></div></li>
                     </ul>
                 </div>
             </div>
             <section class="project-details-section max-col">
-                <div class="project-details-hero neu-border">
-                    <img height="820px" width="1200px" src="images/cliq-banner.png" alt="CLIQ Project Banner">
+                <div data-scroll-section class="project-details-hero neu-border">
+                    <img data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" height="820px" width="1200px" src="images/cliq-banner.png" alt="CLIQ Project Banner">
                 </div>
             </section>
         </div>
         <!-- Section annotation r1 -->
         <section class="grid-container">
-            <div class="col-10 section-title-annotation">
-                <h2 class="project-details-large-header">Research</h2>
+            <div data-scroll-section class="col-10 section-title-annotation">
+                <h2 data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" class="project-details-large-header">Research</h2>
             </div>
         </section>
         <div class="grid-container">
             <section class="max-col">
-                <div class="project-details-section">
-                    <div class="project-details-hero center-container">
-                        <img src="images/cliq-persona.png" alt="">
+                <div  class="project-details-section">
+                    <div data-scroll-section class="project-details-hero center-container">
+                        <img data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" src="images/cliq-persona.png" alt="">
                     </div>
-                    <div class="project-details-hero center-container">
-                        <img src="images/user-research.png" alt="">
-                    </div>
+                    <!-- <div data-scroll-section class="project-details-hero center-container">
+                        <img data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" src="images/user-research.png" alt="">
+                    </div> -->
                 </div>
             </section>
         </div>
-        <section class="grid-container">
+        <section  class="grid-container">
             <article class="col-10 section-title-annotation">
-                <div class="annotation-description">
-                    <h2>Sketch</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi itaque aspernatur labore nobis, expedita iusto enim commodi explicabo officiis eius rerum quos ullam architecto voluptates, similique harum aliquid iste!</p>
+                <div data-scroll-section class="annotation-description">
+                    <h2 data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" >Sketch</h2>
+                    <p data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi itaque aspernatur labore nobis, expedita iusto enim commodi explicabo officiis eius rerum quos ullam architecto voluptates, similique harum aliquid iste!</p>
                 </div>
             </article>
         </section>
-        <section class="project-details-section max-grid-container">
-            <div class="half-bleed-1 project-details-hero center-container">
-                <h2>Product List</h2>
-                <img src="images/cliq-sketch-prod.png" alt="">
+        <section data-scroll class="project-details-section max-grid-container">
+            <div data-scroll-section class="half-bleed-1 project-details-hero center-container">
+                <h2 data-scroll data-scroll-repeat="true" >Product List</h2>
+                <img data-scroll data-scroll-repeat="true" src="images/cliq-sketch-prod.png" alt="">
             </div>
         
-            <div class="half-bleed-2 project-details-hero center-container">
-                <h2>Product Details</h2>
-                <img src="images/cliq-sketch-home.png" alt="">
+            <div data-scroll-section class="half-bleed-2 project-details-hero center-container">
+                <h2 data-scroll data-scroll-repeat="true" >Product Details</h2>
+                <img data-scroll data-scroll-repeat="true" src="images/cliq-sketch-home.png" alt="">
             </div>
         </section>
         <!-- Section annotation r1-->
-        <section class="grid-container">
-            <div class="col-10 section-title-annotation">
-                <h2 class="project-details-large-header">Wireframes</h2>
+        <section  class="grid-container">
+            <div data-scroll-section class="col-10 section-title-annotation">
+                <h2 data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" class="project-details-large-header">Wireframes</h2>
             </div>
         </section>
-        <section class="project-details-section max-grid-container">
-            <div class="half-bleed-1 project-details-hero center-container">
-                <h2>wireframe1</h2>
-                <img src="images/home-wireframe.png" alt="">
+        <section  class="project-details-section max-grid-container">
+            <div data-scroll-section class="half-bleed-1 project-details-hero center-container">
+                <h2 data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" data-scroll>wireframe1</h2>
+                <img data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" src="images/home-wireframe.png" alt="">
             </div>
-            <div class="half-bleed-2 project-details-hero center-container">
-                <h2>wireframe2</h2>
-                <img src="images/item-list-wireframe.png" alt="">
+            <div data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" data-scroll-section class="half-bleed-2 project-details-hero center-container">
+                <h2 data-scroll>wireframe2</h2>
+                <img data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" src="images/item-list-wireframe.png" alt="">
             </div>
-            <div class="half-bleed-1 project-details-hero center-container">
-                <h2>wireframe3</h2>
-                <img src="images/product-details-wireframe.png" alt="">
+            <div data-scroll-section class="half-bleed-1 project-details-hero center-container">
+                <h2 data-scroll>wireframe3</h2>
+                <img data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" src="images/product-details-wireframe.png" alt="">
             </div>
-            <div class="half-bleed-2 project-details-hero center-container">
-                <h2>wireframe4</h2>
-                <img src="images/checkout-wireframe.png" alt="">
+            <div data-scroll-section class="half-bleed-2 project-details-hero center-container">
+                <h2 data-scroll>wireframe4</h2>
+                <img data-scroll data-scroll-class="scroll-class" data-scroll-speed=".5" data-scroll-repeat="true" src="images/checkout-wireframe.png" alt="">
             </div>
         </section>
+
+
         <!-- Section annotation r1 -->
-        <section class="grid-container">
+        <section data-scroll-section class="grid-container">
             <div class="col-10 section-title-annotation">
                 <div class="annotation-description">
-                    <h2>test</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi itaque aspernatur labore nobis, expedita iusto enim commodi explicabo officiis eius rerum quos ullam architecto voluptates, similique harum aliquid iste!</p>
+                    <h2 data-scroll>test</h2>
+                    <p data-scroll>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi itaque aspernatur labore nobis, expedita iusto enim commodi explicabo officiis eius rerum quos ullam architecto voluptates, similique harum aliquid iste!</p>
                 </div>
             </div>
         </section>
-        <div class="grid-container">
+
+
+        <div data-scroll-section class="grid-container">
             <section class="project-details-section max-col">
                 <h2>STYLE GUIDE</h2>
                 <div class="project-details-hero">
@@ -133,49 +137,123 @@
                 </div>
                 <h2>Typography</h2>
                 <div class="project-details-hero">
-                    <img src="images/cliq-style-guide.svg" alt="">
+                    <img src="images/cliq-type-guide.png" alt="">
                 </div>
                 <h2>Pattern Elements</h2>
                 <div class="project-details-hero">
-                    <img src="images/cliq-style-guide.svg" alt="">
+                    <img src="images/cliq-pattern-guide.png" alt="">
+                </div>
+                <h2>Components</h2>
+                <div class="project-details-hero">
+                    <img src="images/cliq-component-guide.png" alt="">
+                </div>
+                <h2>Grid</h2>
+                <div class="project-details-hero">
+                    <img src="images/cliq-grid-guide.png" alt="">
                 </div>
             </section>
         </div>
         <!-- Section annotation r1 -->
-        <section class="grid-container">
+
+        
+        <section data-scroll-section class="grid-container">
             <div class="col-10 section-title-annotation">
                 <h2 class="project-details-large-header">test</h2>
             </div>
         </section>
-        <div class="grid-container">
-            <section class="project-details-section max-col">
-                <div class="project-details-hero">
-                    <h2>Test1</h2>
-                    <img src="images/cliq-banner.png" alt="Project Page1">
-                </div>
-                <div class="project-details-hero">
-                    <h2>Test2</h2>
-                    <img src="images/cliq-banner.png" alt="Project Page1">
-                </div>
-                <div class="project-details-hero">
-                    <h2>Test3</h2>
-                    <img src="images/cliq-banner.png" alt="Project Page1">
-                </div>
-                <div class="project-details-hero">
-                    <h2>Test4</h2>
-                    <img src="images/cliq-banner.png" alt="Project Page1">
-                </div>
-                <div class="project-details-hero">
-                    <h2>Test5</h2>
-                    <img src="images/cliq-banner.png" alt="Project Page1">
-                </div>
-            </section>
+        <div data-scroll-section class="max-grid-container project-details-section">
+
+
+        <section class="project-details-section max-col">
+            <!-- home page -->
+            <div class="half-bleed-1 project-details-hero">
+                <h2>Test1</h2>
+                <img src="images/home-final-1.png" alt="Project Page1">
+            </div>
+            <div class="half-bleed-2 project-details-hero">
+                <h2>Test2</h2>
+                <img src="images/home-final-2.png" alt="Project Page1">
+            </div>
+            <div class="half-bleed-1 project-details-hero">
+                <h2>Test1</h2>
+                <img src="images/home-final-3.png" alt="Project Page1">
+            </div>
+            <div class="half-bleed-2 project-details-hero">
+                <h2>Test2</h2>
+                <img src="images/home-final-4.png" alt="Project Page1">
+            </div>
+
+
+            <!-- prod list page -->
+            <div class="half-bleed-1 project-details-hero">
+                <h2>Test1</h2>
+                <img src="images/product-details-final-1.png" alt="Project Page1">
+            </div>
+            <div class="half-bleed-2 project-details-hero">
+                <h2>Test2</h2>
+                <img src="images/product-details-final-2.png" alt="Project Page1">
+            </div>
+            <div class="half-bleed-1 project-details-hero">
+                <h2>Test1</h2>
+                <img src="images/product-details-final-3.png" alt="Project Page1">
+            </div>
+            <div class="half-bleed-2 project-details-hero">
+                <h2>Test2</h2>
+                <img src="images/product-details-final-4.png" alt="Project Page1">
+            </div>
+            <div class="half-bleed-1 project-details-hero">
+                <h2>Test1</h2>
+                <img src="images/product-details-final-5.png" alt="Project Page1">
+            </div>
+            <div class="half-bleed-2 project-details-hero">
+                <h2>Test2</h2>
+                <img src="images/product-details-final-6.png" alt="Project Page1">
+            </div>
+            <div class="half-bleed-1 project-details-hero">
+                <h2>Test1</h2>
+                <img src="images/product-details-final-7.png" alt="Project Page1">
+            </div>
+            <div class="half-bleed-2 project-details-hero">
+                <h2>Test2</h2>
+                <img src="images/product-details-final-8.png" alt="Project Page1">
+            </div>
+            <!-- project details page -->
+
+            
+            <div class="half-bleed-1 project-details-hero">
+                <h2>Test1</h2>
+                <img src="images/prod-list-final-1.png" alt="Project Page1">
+            </div>
+            <div class="half-bleed-2 project-details-hero">
+                <h2>Test2</h2>
+                <img src="images/prod-list-final-2.png" alt="Project Page1">
+            </div>
+
+
+            <!-- guides page -->
+            <div class="max-col project-details-hero">
+                <h2>Test1</h2>
+                <img src="images/guides-final-1.png" alt="Project Page1">
+            </div>
+            <div class="half-bleed-1 project-details-hero">
+                <h2>Test2</h2>
+                <img src="images/guides-final-2.png" alt="Project Page1">
+            </div>
+            <div class="half-bleed-2 project-details-hero">
+                <h2>Test2</h2>
+                <img src="images/guides-final-3.png" alt="Project Page1">
+            </div> 
+        </section>
+
+        
         </div>
-        <section class="max-grid-container">
+        <section data-scroll-section class="max-grid-container">
             <div class="max-col project-details-hero center-container">
                 <img src="images/cliq-logo.png" alt="">
             </div>
         </section>
+
+        
         <!-- <section class="project-details-section max-grid-container">
             <div class="half-bleed-1 project-details-hero center-container">
                 <h2>Next Project</h2>
@@ -187,10 +265,8 @@
             </div>
         </section> -->
     </main>
-    <footer>
+    <footer data-scroll-section>
       <div class="footer-wrapper">  
-        <!-- <i class="far fa-envelope"></i>
-        <i class="icon ion-logo-instagram"></i>  -->
         <ul class="footer-menu">
           <li>
             <a href="">Contact</a>
@@ -205,6 +281,6 @@
       </div> 
       <p class="copyright">Xiang Daniel Shi © 2020</p>
     </footer>
-
+    <script src="index.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .max-grid-container{
@@ -73,14 +74,19 @@
 }
 
 @media only screen and (max-width: 72em) {
+    
+    /* .col-10{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    } */
     .half-bleed-1, .half-bleed-2{
         grid-column-start: 1;
         grid-column-end: -1;
     }
 
     .project-container{
-        grid-column-start: 2;
-        grid-column-end: 12;
+        grid-column-start: 1;
+        grid-column-end: 13;
         display: flex;
         flex-direction: column;
     }
