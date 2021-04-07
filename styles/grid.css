@@ -1,7 +1,7 @@
 .grid-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: .5em;
+    grid-gap: 1.5em;
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
@@ -11,7 +11,7 @@
 .max-grid-container{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    grid-gap: .5em;
+    grid-gap: 1.5em;
     width: 100%;
     padding: 0 2rem;
 }
@@ -47,14 +47,23 @@
 
 @media only screen and (min-width: 72em) {
     .half-bleed-1{
-        grid-column-start: 1;
+        grid-column-start: 3;
         grid-column-end: 9;
     }
     
     .half-bleed-2{
         grid-column-start: 9;
-        grid-column-end: 17;
+        grid-column-end: 15;
+    }
+
+    .grid-container-half-bleed-1{
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
     
+    .grid-container-half-bleed-2{
+        grid-column-start: 7;
+        grid-column-end: 13;
     }
 
     .project-container{    
@@ -80,6 +89,11 @@
         grid-column-end: -1;
     } */
     .half-bleed-1, .half-bleed-2{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    
+    .grid-container-half-bleed-1, .grid-container-half-bleed-2{
         grid-column-start: 1;
         grid-column-end: -1;
     }

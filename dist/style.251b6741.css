@@ -135,7 +135,7 @@ li {
 }
 
 .project-tool-wrapper{   
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     justify-content: space-between;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -370,6 +370,23 @@ header{
     display:flex;
 }
 
+.section-sub-title-annotation{
+    height: auto;
+    display: flex;
+}
+
+.section-sub-title-annotation .annotation-description{
+    padding-bottom: 25vh;
+}
+
+.prototype-section-sub-head{
+    font-size: 5rem;
+}
+
+.section-sub-title-annotation h2{
+    margin: auto;
+}
+
 .section-title-annotation h2, .section-title-annotation .annotation-description {
     margin: auto
 }
@@ -395,7 +412,7 @@ header{
     margin-top: 2rem;
 }
 
-.project-details-container .project-tools-wrapper{
+.project-details-container {
     margin-top: 1rem;
 }
 
@@ -410,6 +427,13 @@ header{
     transition-duration: 0.4s;
 }
 
+
+.project-details-large-header{
+    text-transform: uppercase;
+}
+
+
+
 /* end of project details page */
 
 
@@ -421,6 +445,7 @@ header{
     .project-details-large-header{
         text-align: center;
         font-size: 5rem;
+        text-transform: uppercase;
     }
     nav{    
         margin: 2.5% auto;
