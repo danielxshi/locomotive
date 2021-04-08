@@ -272,12 +272,6 @@ h1{
     color: #FAFFFD;
 }
 
-.portfolio-intro-header{
-    font-size: 5rem;
-    font-family: 'Playfair Display', serif;
-    /* color: #312e37; */
-    color: #FAFFFD;
-}
 
 .portfolio-header-center{
     text-align: center;
@@ -438,9 +432,34 @@ header{
 
 
 /* media queries */
-@media only screen and (min-width: 72em) {
+@media only screen and (min-width: 150em) {
     .portfolio-text-banner h1{
         font-size: 18rem;
+    }
+    .portfolio-header-center{
+        text-align: center;
+        font-size: 5rem;
+        margin: auto;
+    }
+    .portfolio-intro-header{
+        font-size: 5rem;
+        font-family: 'Playfair Display', serif;
+        /* color: #312e37; */
+        color: #FAFFFD;
+    }
+
+}
+@media only screen and (min-width: 72em) {    
+    .project-details-description, .team-details, .project-tools-wrapper p{
+        font-size: 1rem;
+    }
+    .portfolio-header-center{
+        text-align: center;
+        font-size: 3rem;
+        margin: auto;
+    }
+    .portfolio-text-banner h1{
+        font-size: 11rem;
     }
     .project-details-large-header{
         text-align: center;
