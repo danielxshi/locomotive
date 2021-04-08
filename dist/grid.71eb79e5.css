@@ -13,7 +13,6 @@
     grid-template-columns: repeat(16, 1fr);
     grid-gap: 1.5em;
     width: 100%;
-    padding: 0 2rem;
 }
 
 .scroll-container{
