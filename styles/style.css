@@ -19,17 +19,12 @@ body{
 }
 
 .hero-wrapper{
-    height:fit-content;
-}
+    height: 100vh;
+    background-image: url("../images/home-hero.png");
 
-.home-hero img{
-    height: auto;
-    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-    min-width: 1024px;
+    background-size: cover;
 }
 
 .hero-content{
@@ -104,14 +99,13 @@ li {
 
 .portfolio-intro{
     margin-top: 20vh;
-    height: 80vh;
+    height: 50vh;
     display: flex;
 }
 
 .portfolio-text-banner{
-    height: 100vh;
+    height: 80vh;
     display: flex;
-    margin-bottom: 20vh;
     grid-column-start: 2;
     grid-column-end: 16;
 }
@@ -121,9 +115,9 @@ li {
 }
 
 .personal {
-    margin: auto;
+    margin: 20vh auto;
     display: flex;
-    height: 100%;
+    height: 60vh;
     flex-direction: column;
 }
 
@@ -229,13 +223,13 @@ nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
-    color: #858585;
+    color: #bebebe;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    color: #858585;
+    color: #bebebe;
 }
 
 li a:hover{
@@ -250,6 +244,32 @@ nav ul li a:hover{
 #nav-on{
     color: #f0f0f1;
 }
+
+/* side nav */
+.sidenav {
+    width: auto;
+    position: fixed;
+    z-index: 1;
+    top: 25vh;
+    /* left: 5vw; */
+    overflow-x: hidden;
+    /* padding: 8px 0; */
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #bebebe;
+    display: block;
+    margin: 2rem 0;
+  }
+  
+  .sidenav a:hover {
+    color: #FFD400;
+  }
+/* end of side nav */
+
 
 h1{
     font-size: 5rem;
@@ -273,7 +293,7 @@ h2{
 .hero img{
     object-fit: cover;
     width: 100%;
-    max-height: 100%;
+    height: auto;
     transition-duration: 0.4s;
 }
 
@@ -400,8 +420,8 @@ header{
 .project-details-hero img{
     object-fit: cover;
     width: 100%;
-    max-height: 100%;
-    transition-duration: 0.4s;
+    max-height: auto;
+    height: auto;
 }
 
 
@@ -449,10 +469,17 @@ header{
         font-size: 5rem;
         text-transform: uppercase;
     }
+    .portfolio-intro-header{
+        font-size: 4rem;
+        font-family: 'Playfair Display', serif;
+        /* color: #312e37; */
+        color: #FAFFFD;
+    }
     nav{    
         margin: 2.5% auto;
         width: 1240px;
         max-width: 1240px;
+        /* box-shadow: 0 4px 2px -2px rgb(0 0 0 / 20%); */
     }
     
     header{
