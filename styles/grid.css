@@ -48,6 +48,32 @@
     grid-column-end: 11;
 }
 
+.col-project-details-start-4{
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+
+.col-project-details-start-7{
+    grid-column-start: 7;
+    grid-column-end: 10;
+}
+
+
+.col-project-details-start-10{
+    grid-column-start: 10;
+    grid-column-end: 13;
+}
+
+.col-prototype{
+    grid-column-start: 4;
+    grid-column-end: 8;
+}
+
+.col-prototype-second-half{
+    grid-column-start: 8;
+    grid-column-end: 13;
+}
 /* project-details page */
 
 @media only screen and (min-width: 155em) {
@@ -74,6 +100,12 @@
         grid-column-end: 15;
     }
 
+    
+    .half-bleed-2-side-container{
+        grid-column-start: 9;
+        grid-column-end: 13;
+    }
+
     .grid-container-half-bleed-1{
         grid-column-start: 1;
         grid-column-end: 7;
@@ -89,8 +121,8 @@
         grid-template-columns: repeat(12, 1fr);
         grid-gap: .5em;
         width: 100%;
+        margin: 20vh auto;
         max-width: 1240px;
-        grid-template-rows: 50vh 10vh;
     }
 
     .project-container .hero{

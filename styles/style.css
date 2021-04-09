@@ -13,9 +13,13 @@ html{
 body{
     background-color: #312E37;
     color: #FAFFFD;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Noto Sans JP', sans-serif;
     overflow-x: hidden;
+}
+
+p{
+    line-height: 2rem;
 }
 
 .hero-wrapper{
@@ -57,7 +61,7 @@ article .article-full-page{
 }
 
 .project-details-section{
-    margin: 25vh 0;
+    margin: 20vh 0;
 }
 
 .home-section{
@@ -98,8 +102,8 @@ li {
 }
 
 .portfolio-intro{
-    margin-top: 20vh;
-    height: 50vh;
+    margin: 20vh auto;
+    height: 60vh;
     display: flex;
 }
 
@@ -137,6 +141,7 @@ li {
     justify-content: space-between;
     grid-column-start: 1;
     grid-column-end: 4;
+    margin-top: 2rem;
 }
 
 .project-container a{
@@ -164,10 +169,10 @@ li {
 
 
 
-.project-description h3{
+/* .project-description h3{
     margin-top: 3rem;
 }
-
+ */
 
 footer{
     height: 20vh;
@@ -305,6 +310,8 @@ h2{
 .neu-border img{
     padding: 1.75rem;
     box-shadow: inset 5px 5px 10px #242228, inset -5px -5px 10px #3e3a46;
+    margin-bottom: 0;
+    margin-top: 20vh;
 }
 
 .project-cheer span{
@@ -363,7 +370,6 @@ header{
 }
 
 .section-title-annotation{
-    height: 50vh;
     display:flex;
 }
 
@@ -384,7 +390,7 @@ header{
     margin: auto;
 }
 
-.section-title-annotation h2, .section-title-annotation .annotation-description {
+.section-title-annotation .annotation-description {
     margin: auto
 }
 
@@ -397,8 +403,9 @@ header{
     font-size: 2rem;
 }
 
-.project-details-description{
-    line-height: 2.5rem;
+.prototype-center-sub-h3{
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .project-details-container{
@@ -422,6 +429,11 @@ header{
     width: 100%;
     max-height: auto;
     height: auto;
+}
+
+.project-details-hero iframe{
+    width: 100%;
+    object-fit: cover;
 }
 
 
@@ -462,15 +474,16 @@ header{
         margin: auto;
     }
     .portfolio-text-banner h1{
-        font-size: 11rem;
+        font-size: 8rem;
     }
     .project-details-large-header{
         text-align: center;
         font-size: 5rem;
         text-transform: uppercase;
+        margin-bottom: 2rem;
     }
     .portfolio-intro-header{
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: 'Playfair Display', serif;
         /* color: #312e37; */
         color: #FAFFFD;
