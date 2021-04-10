@@ -13,14 +13,18 @@ html{
 body{
     background-color: #312E37;
     color: #FAFFFD;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Noto Sans JP', sans-serif;
     overflow-x: hidden;
 }
 
+p{
+    line-height: 2rem;
+}
+
 .hero-wrapper{
     height: 100vh;
-    background-image: url("/home-hero.2a7ec3b9.png");
+    background-image: url("/home-hero-2.ad179cb0.png");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -57,7 +61,7 @@ article .article-full-page{
 }
 
 .project-details-section{
-    margin: 25vh 0;
+    margin: 20vh 0;
 }
 
 .home-section{
@@ -98,8 +102,8 @@ li {
 }
 
 .portfolio-intro{
-    margin-top: 20vh;
-    height: 50vh;
+    margin: 20vh auto;
+    height: 60vh;
     display: flex;
 }
 
@@ -126,37 +130,78 @@ li {
     letter-spacing: .2em;
 }
 
-.color-block{
-    height: 3rem;
-    width: 3rem;
-    border-radius: 100%;
-    background-color: tomato;
+.project-container a{
+    grid-column-end: -1;
+    grid-row-end: -1;
 }
+
+/* project tools */
 
 .project-tool-wrapper{   
     justify-content: space-between;
     grid-column-start: 1;
     grid-column-end: 4;
-}
-
-.project-container a{
-    grid-column-end: -1;
-    grid-row-end: -1;
-    margin-bottom: 0;
+    margin-top: 2rem;
 }
 
 .project-tools{    
     display: flex;
-    margin: 1rem 0;
+    flex-wrap: wrap;
 }
 
 .project-tools li{
-    margin: 0 1rem;
+    margin: 1rem 1rem 0 0;
 }
 
-.project-tools li:first-child{
-    margin-left: 0;
+.tool-icon-wrapper{
+    display: flex;
+    flex-direction: column;
 }
+
+/* icons */
+.icon-wrapper{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+.protopie-icon{
+    background-image: url("/protopie-icon.5cf4d1da.png");
+}
+
+.icon-bg{
+    /* Full height */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.figma-icon{
+    background-image: url("/figma-icon.48fa3693.png");
+}
+
+.css-icon{
+    background-image: url("/css-icon.87af3ae8.png");
+}
+
+.html-icon{
+    background-image: url("/html-icon.b72afc06.png");
+}
+
+.js-icon{
+    background-image: url("/js-icon.c16655ae.png");
+}
+/* ends of icons */
+
+cite {
+    margin-top: .75rem;
+    font-size: 1rem;
+    color: #969696;
+    text-align: center;
+}
+
+/* end of project tools */
 
 .highlight-text{
     color: #FFD400;
@@ -164,10 +209,10 @@ li {
 
 
 
-.project-description h3{
+/* .project-description h3{
     margin-top: 3rem;
 }
-
+ */
 
 footer{
     height: 20vh;
@@ -210,15 +255,6 @@ nav ul {
     flex-wrap: wrap;
 }
 
-#hamburger-links{
-    /* display: none; */
-}
-
-#hamburger-links a{
-    /* display: block; */
-}
-
-
 nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
@@ -250,10 +286,8 @@ nav ul li a:hover{
     width: auto;
     position: fixed;
     z-index: 1;
-    top: 25vh;
-    /* left: 5vw; */
+    top: 20vh;
     overflow-x: hidden;
-    /* padding: 8px 0; */
   }
   
   .sidenav a {
@@ -293,18 +327,24 @@ h2{
 .hero img{
     object-fit: cover;
     width: 100%;
+    /* max-height: 25rem; */
     height: auto;
     transition-duration: 0.4s;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-container .hero img:hover{
-    padding: 1.75rem;
+    padding: 1.75rem ;
     box-shadow: inset 5px 5px 10px #242228, inset -5px -5px 10px #3e3a46;
+    overflow: hidden;
 }
 
 .neu-border img{
     padding: 1.75rem;
     box-shadow: inset 5px 5px 10px #242228, inset -5px -5px 10px #3e3a46;
+    margin-bottom: 0;
+    margin-top: 20vh;
 }
 
 .project-cheer span{
@@ -330,7 +370,7 @@ h2{
     -webkit-text-fill-color: #312E37;
 }
 
-@-webkit-keyframes marquee{
+@keyframes marquee{
     0%{
         transform: translate(0, 0);
     }
@@ -363,7 +403,6 @@ header{
 }
 
 .section-title-annotation{
-    height: 50vh;
     display:flex;
 }
 
@@ -384,7 +423,7 @@ header{
     margin: auto;
 }
 
-.section-title-annotation h2, .section-title-annotation .annotation-description {
+.section-title-annotation .annotation-description {
     margin: auto
 }
 
@@ -397,8 +436,9 @@ header{
     font-size: 2rem;
 }
 
-.project-details-description{
-    line-height: 2.5rem;
+.prototype-center-sub-h3{
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .project-details-container{
@@ -422,6 +462,11 @@ header{
     width: 100%;
     max-height: auto;
     height: auto;
+}
+
+.project-details-hero iframe{
+    width: 100%;
+    object-fit: cover;
 }
 
 
@@ -453,6 +498,10 @@ header{
 
 }
 @media only screen and (min-width: 72em) {    
+    .project-container a{
+        margin-top: 2rem;
+        margin-right: 1rem;
+    }
     .project-details-description, .team-details, .project-tools-wrapper p{
         font-size: 1rem;
     }
@@ -462,15 +511,16 @@ header{
         margin: auto;
     }
     .portfolio-text-banner h1{
-        font-size: 11rem;
+        font-size: 8rem;
     }
     .project-details-large-header{
         text-align: center;
         font-size: 5rem;
         text-transform: uppercase;
+        margin-bottom: 2rem;
     }
     .portfolio-intro-header{
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: 'Playfair Display', serif;
         /* color: #312e37; */
         color: #FAFFFD;
@@ -490,9 +540,8 @@ header{
         display: flex;
     }
     .project-description p{
-        font-size: 1.5rem;
-        line-height: 1.5em;
-        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        line-height: 2rem;
     }
 
     .mobile-project-header{
@@ -545,6 +594,11 @@ header{
         position: -webkit-sticky;
         display: block;
     }
+
+    .sidenav{
+        display: none;
+    }
+
     body{
         font-size: 1rem;
     }
@@ -614,11 +668,6 @@ header{
 @media only screen and (max-width: 25em) {
     h1{
         font-size: 1.25rem;
-    }
-    .color-block{
-        width: 2rem;
-        height: 2rem;
-        background-color: tomato;
     }
     .project-description p {
         font-size: 1.25rem;

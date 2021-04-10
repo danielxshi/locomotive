@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\home-hero.png":[["home-hero.2a7ec3b9.png","images/home-hero.png"],"images/home-hero.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\images\\home-hero-2.png":[["home-hero-2.ad179cb0.png","images/home-hero-2.png"],"images/home-hero-2.png"],"./..\\images\\icons\\protopie-icon.png":[["protopie-icon.5cf4d1da.png","images/icons/protopie-icon.png"],"images/icons/protopie-icon.png"],"./..\\images\\icons\\figma-icon.png":[["figma-icon.48fa3693.png","images/icons/figma-icon.png"],"images/icons/figma-icon.png"],"./..\\images\\icons\\css-icon.png":[["css-icon.87af3ae8.png","images/icons/css-icon.png"],"images/icons/css-icon.png"],"./..\\images\\icons\\html-icon.png":[["html-icon.b72afc06.png","images/icons/html-icon.png"],"images/icons/html-icon.png"],"./..\\images\\icons\\js-icon.png":[["js-icon.c16655ae.png","images/icons/js-icon.png"],"images/icons/js-icon.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58718" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54682" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

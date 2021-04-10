@@ -24,7 +24,7 @@ p{
 
 .hero-wrapper{
     height: 100vh;
-    background-image: url("../images/home-hero.png");
+    background-image: url("../images/home-hero-2.png");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -130,12 +130,12 @@ li {
     letter-spacing: .2em;
 }
 
-.color-block{
-    height: 3rem;
-    width: 3rem;
-    border-radius: 100%;
-    background-color: tomato;
+.project-container a{
+    grid-column-end: -1;
+    grid-row-end: -1;
 }
+
+/* project tools */
 
 .project-tool-wrapper{   
     justify-content: space-between;
@@ -144,24 +144,64 @@ li {
     margin-top: 2rem;
 }
 
-.project-container a{
-    grid-column-end: -1;
-    grid-row-end: -1;
-    margin-bottom: 0;
-}
-
 .project-tools{    
     display: flex;
-    margin: 1rem 0;
+    flex-wrap: wrap;
 }
 
 .project-tools li{
-    margin: 0 1rem;
+    margin: 1rem 1rem 0 0;
 }
 
-.project-tools li:first-child{
-    margin-left: 0;
+.tool-icon-wrapper{
+    display: flex;
+    flex-direction: column;
 }
+
+/* icons */
+.icon-wrapper{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+.protopie-icon{
+    background-image: url("../images/icons/protopie-icon.png");
+}
+
+.icon-bg{
+    /* Full height */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.figma-icon{
+    background-image: url("../images/icons/figma-icon.png");
+}
+
+.css-icon{
+    background-image: url("../images/icons/css-icon.png");
+}
+
+.html-icon{
+    background-image: url("../images/icons/html-icon.png");
+}
+
+.js-icon{
+    background-image: url("../images/icons/js-icon.png");
+}
+/* ends of icons */
+
+cite {
+    margin-top: .75rem;
+    font-size: 1rem;
+    color: #969696;
+    text-align: center;
+}
+
+/* end of project tools */
 
 .highlight-text{
     color: #FFD400;
@@ -214,15 +254,6 @@ nav ul {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
-#hamburger-links{
-    /* display: none; */
-}
-
-#hamburger-links a{
-    /* display: block; */
-}
-
 
 nav ul li a {
     text-decoration: none;
@@ -296,13 +327,17 @@ h2{
 .hero img{
     object-fit: cover;
     width: 100%;
+    /* max-height: 25rem; */
     height: auto;
     transition-duration: 0.4s;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-container .hero img:hover{
-    padding: 1.75rem;
+    padding: 1.75rem ;
     box-shadow: inset 5px 5px 10px #242228, inset -5px -5px 10px #3e3a46;
+    overflow: hidden;
 }
 
 .neu-border img{
@@ -335,7 +370,7 @@ h2{
     -webkit-text-fill-color: #312E37;
 }
 
-@-webkit-keyframes marquee{
+@keyframes marquee{
     0%{
         transform: translate(0, 0);
     }
@@ -463,6 +498,10 @@ header{
 
 }
 @media only screen and (min-width: 72em) {    
+    .project-container a{
+        margin-top: 2rem;
+        margin-right: 1rem;
+    }
     .project-details-description, .team-details, .project-tools-wrapper p{
         font-size: 1rem;
     }
@@ -501,9 +540,8 @@ header{
         display: flex;
     }
     .project-description p{
-        font-size: 1.5rem;
-        line-height: 1.5em;
-        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        line-height: 2rem;
     }
 
     .mobile-project-header{
@@ -556,6 +594,11 @@ header{
         position: -webkit-sticky;
         display: block;
     }
+
+    .sidenav{
+        display: none;
+    }
+
     body{
         font-size: 1rem;
     }
@@ -625,11 +668,6 @@ header{
 @media only screen and (max-width: 25em) {
     h1{
         font-size: 1.25rem;
-    }
-    .color-block{
-        width: 2rem;
-        height: 2rem;
-        background-color: tomato;
     }
     .project-description p {
         font-size: 1.25rem;
