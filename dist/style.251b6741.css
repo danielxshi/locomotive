@@ -36,11 +36,22 @@ p{
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-text{
     padding-bottom: 3rem;
 }
+
+.hero-cta{
+    display: flex;
+}
+
+.hero-cta a{
+    margin-left: 0;
+}
+
 
 .hero-cta a:first-child{
     margin-right: 2rem;
@@ -126,7 +137,7 @@ body{
     height: 80vh;
     display: flex;
     grid-column-start: 2;
-    grid-column-end: 16;
+    grid-column-end: 12;
 }
 
 .portfolio-text-banner-wrapper{
@@ -332,7 +343,7 @@ h1{
 
 .portfolio-header-center{
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
     margin: auto;
 }
 
@@ -498,7 +509,7 @@ header{
 
 
 /* media queries */
-@media only screen and (min-width: 150em) {
+/* @media only screen and (min-width: 150em) {
     .portfolio-text-banner h2{
         font-size: 18rem;
     }
@@ -510,11 +521,10 @@ header{
     .portfolio-intro-header{
         font-size: 5rem;
         font-family: 'Playfair Display', serif;
-        /* color: #312e37; */
         color: #FAFFFD;
     }
 
-}
+} */
 @media only screen and (min-width: 72em) {    
     .project-container a{
         margin-top: 2rem;
@@ -675,6 +685,21 @@ header{
     }
 }
 
+@media only screen and (max-width: 50em) {
+    .project-intro-container {
+        margin-top: 12.5vh;
+    }
+    .project-details-section {
+        margin: 8vh 0;
+    }
+    .neu-border img {
+        margin-top: 0;
+    }
+    .project-details-description {
+        font-size: 1rem;
+    }
+}
+
 
 @media only screen and (max-width: 32em) {
     h1{
@@ -685,7 +710,7 @@ header{
 /* s8 */
 @media only screen and (max-width: 25em) {
     h1{
-        font-size: 1.25rem;
+        font-size: 2.25rem;
     }
     .project-description p {
         font-size: 1.25rem;
