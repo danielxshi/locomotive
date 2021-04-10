@@ -169,6 +169,11 @@
         grid-column-end: span 4;
     }
 
+    .locomotive-sub-heading{
+        grid-column-start: 4;
+        grid-column-end: 10;
+    }
+
 }
 
 @media only screen and (max-width: 72em) {

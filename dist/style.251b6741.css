@@ -13,7 +13,7 @@ html{
 body{
     background-color: #312E37;
     color: #FAFFFD;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     font-family: 'Noto Sans JP', sans-serif;
     overflow-x: hidden;
 }
@@ -73,9 +73,21 @@ li {
     list-style: none;
 }
 
+.hero-header{
+    
+}
+
+body{
+    font-size: 1.5rem;
+}
+
+.hero-sub-text, .project-details-description{
+    font-size: 1.5rem;
+}
+
 .primary-btn{
     font-weight: 600;
-    font-size: 0.9em;
+    font-size: 1.2rem;
   
     white-space: nowrap;
   
@@ -103,8 +115,11 @@ li {
 
 .portfolio-intro{
     margin: 20vh auto;
-    height: 60vh;
     display: flex;
+}
+
+.portfolio-intro > *{
+    margin: auto;
 }
 
 .portfolio-text-banner{
@@ -118,14 +133,13 @@ li {
     margin: auto;
 }
 
-.personal {
+.small-heading-container {
     margin: 20vh auto;
     display: flex;
-    height: 60vh;
     flex-direction: column;
 }
 
-.personal h1{
+.small-heading-container h3{
     margin: auto;
     letter-spacing: .2em;
 }
@@ -196,7 +210,7 @@ li {
 
 cite {
     margin-top: .75rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #969696;
     text-align: center;
 }
@@ -258,7 +272,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #bebebe;
 }
 
@@ -286,17 +300,21 @@ nav ul li a:hover{
     width: auto;
     position: fixed;
     z-index: 1;
-    top: 20vh;
+    top: 25vh;
     overflow-x: hidden;
   }
   
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #bebebe;
     display: block;
     margin: 2rem 0;
+  }
+
+  .sidenav ul li:first-child(){
+      margin-top: 0;
   }
   
   .sidenav a:hover {
@@ -481,7 +499,7 @@ header{
 
 /* media queries */
 @media only screen and (min-width: 150em) {
-    .portfolio-text-banner h1{
+    .portfolio-text-banner h2{
         font-size: 18rem;
     }
     .portfolio-header-center{
@@ -503,14 +521,14 @@ header{
         margin-right: 1rem;
     }
     .project-details-description, .team-details, .project-tools-wrapper p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .portfolio-header-center{
         text-align: center;
         font-size: 3rem;
         margin: auto;
     }
-    .portfolio-text-banner h1{
+    .portfolio-text-banner h2{
         font-size: 8rem;
     }
     .project-details-large-header{
@@ -540,8 +558,8 @@ header{
         display: flex;
     }
     .project-description p{
-        font-size: 1.1rem;
-        line-height: 2rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
     }
 
     .mobile-project-header{
@@ -600,7 +618,7 @@ header{
     }
 
     body{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     footer{
@@ -627,7 +645,7 @@ header{
     }
     
     .project-description p{
-        font-size: clamp(1.5rem, 2vw, 4rem);
+        /* font-size: clamp(1.5rem, 2vw, 4rem); */
         margin-bottom: 2rem;
     }
 
@@ -678,7 +696,7 @@ header{
         font-size: 1.5rem;
     }
     .portfolio-intro h2{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .portfolio-intro p{
         font-size: 1.25rem;
