@@ -4,7 +4,9 @@
     grid-gap: 1.5em;
     width: 100%;
     margin: 0 auto;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
     max-width: 1240px;
 }
 
@@ -112,7 +114,8 @@
 
 @media only screen and (min-width: 90em) {
     .grid-container{
-        max-width: 90vw;
+        /* max-width: 90vw; */
+        max-width: 1240px;
     }
     .col-10{
         grid-column-start: 2;
@@ -154,14 +157,36 @@
     }
 
     .project-container{    
+        /* !testing height */
+        /* display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: .5em;
+        width: 100%;
+        margin: 20vh auto;
+        max-width: 1240px;
+        height: 55vh; */
+
+        /* !testing */ 
+        /* height must be defined or locomotive scroll will not render effectively */
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-gap: .5em;
         width: 100%;
         margin: 20vh auto;
         max-width: 1240px;
-        /* testing height */
         height: 55vh;
+        /* height: max-content; */
+
+        background: rgb(115 115 115 / 30%);
+        background: linear-gradient( 
+    135deg
+    , rgb(45 45 45 / 20%) 0%, rgb(125 113 113 / 30%) 25%, rgb(4 4 4 / 30%) 100%);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgb(122 122 122 / 30%);
+        -webkit-backdrop-filter: blur( 0.0px );
+        border-radius: 8px;
+        border: 1px solid rgb(0 0 0 / 18%);
+        padding: 4rem;
     }
 
     .project-container .home-project-container-visual-content{
@@ -170,8 +195,12 @@
     }
 
     .locomotive-sub-heading{
-        grid-column-start: 4;
+        /* grid-column-start: 4;
         grid-column-end: 10;
+         */
+        /* !testing */
+        grid-column-start: 3;
+        grid-column-end: 11;
     }
 
 }
