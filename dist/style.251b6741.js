@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\bg-texture\\diagonal-block.png":[["diagonal-block.ffdf254e.png","images/bg-texture/diagonal-block.png"],"images/bg-texture/diagonal-block.png"],"./..\\images\\home-hero-2.png":[["home-hero-2.ad179cb0.png","images/home-hero-2.png"],"images/home-hero-2.png"],"./..\\images\\icons\\protopie-icon.png":[["protopie-icon.5cf4d1da.png","images/icons/protopie-icon.png"],"images/icons/protopie-icon.png"],"./..\\images\\icons\\figma-icon.png":[["figma-icon.48fa3693.png","images/icons/figma-icon.png"],"images/icons/figma-icon.png"],"./..\\images\\icons\\css-icon.png":[["css-icon.87af3ae8.png","images/icons/css-icon.png"],"images/icons/css-icon.png"],"./..\\images\\icons\\html-icon.png":[["html-icon.b72afc06.png","images/icons/html-icon.png"],"images/icons/html-icon.png"],"./..\\images\\icons\\js-icon.png":[["js-icon.c16655ae.png","images/icons/js-icon.png"],"images/icons/js-icon.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\images\\bg-texture\\diagonal-block.png":[["diagonal-block.ffdf254e.png","images/bg-texture/diagonal-block.png"],"images/bg-texture/diagonal-block.png"],"./..\\images\\home-hero-2.png":[["home-hero-2.ad179cb0.png","images/home-hero-2.png"],"images/home-hero-2.png"],"./..\\images\\icons\\protopie-icon.png":[["protopie-icon.5cf4d1da.png","images/icons/protopie-icon.png"],"images/icons/protopie-icon.png"],"./..\\images\\icons\\figma-icon.png":[["figma-icon.48fa3693.png","images/icons/figma-icon.png"],"images/icons/figma-icon.png"],"./..\\images\\icons\\css-icon.png":[["css-icon.87af3ae8.png","images/icons/css-icon.png"],"images/icons/css-icon.png"],"./..\\images\\icons\\html-icon.png":[["html-icon.b72afc06.png","images/icons/html-icon.png"],"images/icons/html-icon.png"],"./..\\images\\icons\\js-icon.png":[["js-icon.c16655ae.png","images/icons/js-icon.png"],"images/icons/js-icon.png"],"./..\\images\\bosstep\\bosstep-banner-2048x768.png":[["bosstep-banner-2048x768.e7de9d9e.png","images/bosstep/bosstep-banner-2048x768.png"],"images/bosstep/bosstep-banner-2048x768.png"],"./..\\images\\cliq\\cliq-banner-2048x768.png":[["cliq-banner-2048x768.e5d4295e.png","images/cliq/cliq-banner-2048x768.png"],"images/cliq/cliq-banner-2048x768.png"],"./..\\images\\track\\track-banner-2048x768.png":[["track-banner-2048x768.3ee35f68.png","images/track/track-banner-2048x768.png"],"images/track/track-banner-2048x768.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51802" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52038" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

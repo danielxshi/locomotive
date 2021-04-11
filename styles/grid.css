@@ -4,7 +4,7 @@
     grid-gap: 1.5em;
     width: 100%;
     margin: 0 auto;
-    /* padding: 0 2rem; */
+    padding: 0 2rem;
     /* padding-left: 2rem;
     padding-right: 2rem; */
     max-width: 1240px;
@@ -114,8 +114,8 @@
 
 @media only screen and (min-width: 90em) {
     .grid-container{
-        /* max-width: 90vw; */
-        max-width: 1240px;
+        max-width: 90vw;
+        /* max-width: 1240px; */
     }
     .col-10{
         grid-column-start: 2;
@@ -166,6 +166,7 @@
         max-width: 1240px;
         height: 55vh; */
 
+        /* TODO fix media queries for glassmoprhic box */
         /* !testing */ 
         /* height must be defined or locomotive scroll will not render effectively */
         display: grid;
@@ -174,7 +175,8 @@
         width: 100%;
         margin: 20vh auto;
         max-width: 1240px;
-        height: 55vh;
+        /* !min height */
+        height: 50rem;
         /* height: max-content; */
 
         background: rgb(115 115 115 / 30%);
@@ -193,6 +195,17 @@
         grid-column-start: 1;
         grid-column-end: span 4;
     }
+
+    .home-project-container-visual-content, .project-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .home-project-container-visual-content .hero, .project-description{
+        margin: 1rem auto;
+    }
+
 
     .locomotive-sub-heading{
         /* grid-column-start: 4;

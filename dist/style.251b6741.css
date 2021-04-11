@@ -16,10 +16,22 @@ body{
     font-family: 'Noto Sans JP', sans-serif;
     overflow-x: hidden;
 }
+.glassmorphism{ 
+    background: linear-gradient( 
+135deg
+ , rgb(45 45 45 / 20%) 0%, rgb(125 113 113 / 30%) 25%, rgb(4 4 4 / 30%) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(122 122 122 / 30%);
+    -webkit-backdrop-filter: blur( 0.0px );
+    border-radius: 8px;
+    border: 1px solid rgb(0 0 0 / 18%);
+    padding: 4rem;
+}
+
 .social-icon-wrapper {
     /* TODO adjust margins for diagonal alignment or vertical alignment */
     position: absolute;
-    bottom: 25vh;
+    bottom: 10vh;
     left: 7.5vw;
     /* display: flex; */
 }
@@ -45,6 +57,38 @@ body{
     top: 0px;
     left: 0px;
     background: rgba(0, 0, 0, 0.25);
+}
+.overlay-light{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    /* background: rgb(127 235 235 / 10%); */
+    background: rgb(4 29 116 / 35%);
+}
+.overlay-cool{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    /* background: rgb(80 117 149 / 25%); */
+    background: rgb(255 255 255 / 25%);
+}
+.overlay-warm{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgb(255 122 122 / 10%);
 }
 .overlay-texture{
     /* background-color: #3E3A46; */
@@ -237,7 +281,7 @@ body{
     justify-content: space-between;
     grid-column-start: 1;
     grid-column-end: 4;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .project-tools{    
@@ -337,14 +381,14 @@ footer{
 
 .desktop-nav-container{
     justify-content: center;
-    /* height: 5rem; */
     display: flex;
     width: 100vw;
-    
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgb(120 120 120 / 30%) 42%, rgb(51 51 51 / 30%) 100%);
+    position: fixed;
+    background: linear-gradient(135deg, rgb(0 0 0 / 30%) 0%, rgb(0 0 0 / 30%) 42%, rgb(51 51 51 / 30%) 100%);
+    /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgb(120 120 120 / 30%) 42%, rgb(51 51 51 / 30%) 100%); */
     backdrop-filter: blur(10px);
     border: 1px solid rgb(122 122 122 / 30%);
-    height: 58px;
+    height: 3.5rem;
 }
 
 nav{
@@ -404,14 +448,38 @@ nav ul li a:hover{
     font-size: 1.5rem;
     color: #bebebe;
     display: block;
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
+    padding-left: 0;
   }
 
-  .sidenav ul li:first-child(){
+  .sidenav :first-child(){
       margin-top: 0;
   }
   
   .sidenav a:hover {
+    color: #FFD400;
+  }
+/* end of side nav */
+/* side nav2 */
+.sidenav2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: auto;
+    z-index: 1;
+    margin-top: 25vh;
+    overflow-x: hidden;
+  }
+  
+  .sidenav2 a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #bebebe;
+    display: block;
+    margin: 0 2rem 2rem;
+  }
+  
+  .sidenav2 a:hover {
     color: #FFD400;
   }
 /* end of side nav */
@@ -518,21 +586,18 @@ header{
     display:flex;
 }
 
+/* !possibly remove */
 .section-sub-title-annotation{
     height: auto;
     display: flex;
 }
 
-.section-sub-title-annotation .annotation-description{
+/* .section-sub-title-annotation .annotation-description{
     padding-bottom: 25vh;
-}
+} */
 
 .prototype-section-sub-head{
     font-size: 5rem;
-}
-
-.section-sub-title-annotation h2{
-    margin: auto;
 }
 
 .section-title-annotation .annotation-description {
@@ -540,6 +605,50 @@ header{
 }
 
 /* project details page */
+.bosstep-banner{
+    /* The image used */
+    background-image: url("/bosstep-banner-2048x768.e7de9d9e.png");
+  
+    /* Full height */
+    height: 100%;
+    width: auto;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cliq-banner{
+    /* The image used */
+    background-image: url("/cliq-banner-2048x768.e5d4295e.png");
+  
+    /* Full height */
+    height: 100%;
+    width: auto;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.track-banner{
+    /* The image used */
+    background-image: url("/track-banner-2048x768.3ee35f68.png");
+  
+    /* Full height */
+    height: 100%;
+    width: auto;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-container{
+    height: 50vh;
+}
+
 .project-intro-container{
     margin-top: 25vh;
 }
@@ -727,7 +836,7 @@ header{
         display: block;
     }
 
-    .sidenav{
+    .sidenav, .sidenav2{
         display: none;
     }
 
@@ -808,6 +917,15 @@ header{
 @media only screen and (max-width: 32em) {
     h1{
         font-size: 3rem;
+    }
+    .social-icon-wrapper{
+        bottom: 15vh;
+        right: 2rem;
+        left: revert;
+    }
+    .social-icon-wrapper img{
+       height: 48px;
+       width: 48px; 
     }
 }
 
