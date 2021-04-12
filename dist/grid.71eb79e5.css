@@ -67,6 +67,27 @@
     grid-column-end: 13;
 }
 
+/* !v2 testing on bosstep.html */
+.negative-space-claymockups p {
+    line-height: 2.5rem;
+    margin-top: 2rem;
+}
+
+.negative-space-claymockups{
+    margin-left: 4rem;
+}
+
+.col-project-details-start-4-span-3 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+.col-project-details-start-7-span-3 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+/* end of testing */
+
 .col-prototype{
     grid-column-start: 4;
     grid-column-end: 8;
@@ -111,6 +132,11 @@
 }
 
 /* project-details page */
+
+.project-details-side-heading{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 
 @media only screen and (min-width: 90em) {
     .grid-container{
@@ -219,15 +245,10 @@
 }
 
 @media only screen and (max-width: 72em) {
-    
-    /* .locomotive-sub-heading{
-        grid-column-start: 4;
-        grid-column-end: 15;
-    } */
-    /* .col-10{
+    .project-details-side-heading{
         grid-column-start: 1;
         grid-column-end: -1;
-    } */
+    }
     .half-bleed-1, .half-bleed-2{
         grid-column-start: 1;
         grid-column-end: -1;
@@ -258,9 +279,9 @@
         grid-gap: 1.5em;
         width: 100%;
     }
-    .col-start-3-right{
-        grid-column-start: 1;
-        grid-column-end: -1;
+    .col-start-3-right {
+        grid-column-start: 2;
+        grid-column-end: 12;
     }
     .col-center-6 {
         grid-column-start: 1;
@@ -279,8 +300,8 @@
         grid-column-end: 14;
     }
     .col-prototype {
-        grid-column-start: 2;
-        grid-column-end: 9;
+        grid-column-start: 4;
+        grid-column-end: 10;
     }
     .col-project-details-start-4 {
         grid-column-start: 2;
@@ -304,14 +325,29 @@
     }
 }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 72em) {
     .half-bleed-1-side-container {
-        grid-column-start: 1;
-        grid-column-end: -1;
+        grid-column-start: 2;
+        grid-column-end: 12;
     }
     .half-bleed-2-side-container {
-        grid-column-start: 1;
-        grid-column-end: -1;
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+    .col-project-details-start-4-span-3 {
+        grid-column-start: 2;
+        grid-column-end: 7;
+    }
+    .col-project-details-start-7-span-3 {
+        grid-column-start: 7;
+        grid-column-end: 12;
+    }
+    .negative-space-claymockups {
+        margin-left: 0;
+    }
+    .col-prototype-second-half {
+        grid-column-start: 2;
+        grid-column-end: 12;
     }
 }
 
@@ -356,6 +392,18 @@
         grid-column-end: 12;
     }
     .col-project-details-start-10 {
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+
+    /* !testing */
+    
+    .col-project-details-start-4-span-3 {
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+
+    .col-project-details-start-7-span-3 {
         grid-column-start: 2;
         grid-column-end: 12;
     }

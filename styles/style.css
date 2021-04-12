@@ -107,8 +107,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 p{
-    line-height: 2rem;
+    line-height: 2.5rem;
 }
 
 .hero-wrapper{
@@ -117,6 +118,9 @@ p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .hero-content{
@@ -161,6 +165,10 @@ article .article-full-page{
 
 .project-details-section{
     margin: 20vh 0;
+}
+
+.project-details-section h2{
+    margin-bottom: .5rem;
 }
 
 .home-section{
@@ -434,7 +442,7 @@ nav ul li a:hover{
 }
 
 /* side nav */
-.sidenav {
+/* .sidenav {
     width: auto;
     position: fixed;
     z-index: 1;
@@ -458,10 +466,11 @@ nav ul li a:hover{
   
   .sidenav a:hover {
     color: #FFD400;
-  }
+  } */
 /* end of side nav */
+
 /* side nav2 */
-.sidenav2 {
+.sidenav {
     grid-column-start: 1;
     grid-column-end: 4;
     width: auto;
@@ -470,7 +479,7 @@ nav ul li a:hover{
     overflow-x: hidden;
   }
   
-  .sidenav2 a {
+  .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 1.5rem;
@@ -480,7 +489,7 @@ nav ul li a:hover{
     padding-left: 0;
   }
   
-  .sidenav2 a:hover {
+  .sidenav a:hover {
     color: #FFD400;
   }
 /* end of side nav */
@@ -508,7 +517,6 @@ h2{
 .hero img{
     object-fit: cover;
     width: 100%;
-    /* max-height: 25rem; */
     height: auto;
     transition-duration: 0.4s;
     position: relative;
@@ -579,7 +587,6 @@ h2{
 
 header{
     z-index: 99;
-    /* position: relative; */
 }
 
 #myLinks{
@@ -602,10 +609,6 @@ header{
     display: flex;
 }
 
-/* .section-sub-title-annotation .annotation-description{
-    padding-bottom: 25vh;
-} */
-
 .prototype-section-sub-head{
     font-size: 5rem;
 }
@@ -617,7 +620,7 @@ header{
 /* project details page */
 .bosstep-banner{
     /* The image used */
-    background-image: url("../images/bosstep/bosstep-banner-2048x768.png");
+    background-image: url("../images/bosstep/bosstep-banner-2048x768.jpg");
   
     /* Full height */
     height: 100%;
@@ -701,32 +704,11 @@ header{
 }
 
 
-.project-details-large-header{
-    text-transform: uppercase;
-}
 
 
 
 /* end of project details page */
 
-
-/* media queries */
-/* @media only screen and (min-width: 150em) {
-    .portfolio-text-banner h2{
-        font-size: 18rem;
-    }
-    .portfolio-header-center{
-        text-align: center;
-        font-size: 5rem;
-        margin: auto;
-    }
-    .portfolio-intro-header{
-        font-size: 5rem;
-        font-family: 'Playfair Display', serif;
-        color: #FAFFFD;
-    }
-
-} */
 @media only screen and (min-width: 72em) {    
     .project-container a{
         margin-top: 2rem;
@@ -743,46 +725,18 @@ header{
     .portfolio-text-banner h2{
         font-size: 8rem;
     }
-    .project-details-large-header{
+    .project-details-side-heading{
+        text-transform: uppercase;
         text-align: center;
-        font-size: 5rem;
         text-transform: uppercase;
         margin-bottom: 2rem;
     }
     .portfolio-intro-header{
         font-size: 3rem;
         font-family: 'Playfair Display', serif;
-        /* color: #312e37; */
         color: #FAFFFD;
     }
     nav{    
-        /* margin: 2.5% auto;
-        width: 1240px;
-        max-width: 1240px; */
-        /* box-shadow: 0 4px 2px -2px rgb(0 0 0 / 20%); */
-
-        /* !testing */
-        
-        /* margin: 2.5% auto;
-        width: 85vw;
-        max-width: 85vw; */
-        /* box-shadow: 0 4px 2px -2px rgb(0 0 0 / 20%); */
-        
-        /* box-shadow: 0 4px 2px -2px rgb(228 228 228 / 20%); */
-
-        /* glassmorphic */
-        
-        /* background: rgb(115 115 115 / 30%);
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgb(120 120 120 / 30%) 42%, rgb(51 51 51 / 30%) 100%);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgb(122 122 122 / 30%); */
-
-        
-    /* background: linear-gradient(
-        135deg
-        , rgba(255, 255, 255, 0.3) 0%, rgb(120 120 120 / 30%) 42%, rgb(51 51 51 / 30%) 100%);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgb(122 122 122 / 30%); */
         height: 100%;
     }
     
@@ -831,6 +785,10 @@ header{
 }
 
 @media only screen and (max-width: 72em) {
+    .project-details-side-heading h2{
+        text-align: center;
+        margin: auto;
+    }
     .mobile-nav-container {
         background-color: rgb(49,46,55, 1);
         display: block;
@@ -845,8 +803,7 @@ header{
         position: -webkit-sticky;
         display: block;
     }
-
-    .sidenav, .sidenav2{
+    .sidenav{
         display: none;
     }
 
@@ -878,7 +835,6 @@ header{
     }
     
     .project-description p{
-        /* font-size: clamp(1.5rem, 2vw, 4rem); */
         margin-bottom: 2rem;
     }
 
@@ -921,17 +877,27 @@ header{
     .project-details-description {
         font-size: 1rem;
     }
+    .social-icon-wrapper{
+        bottom: 5vh;
+        right: 2rem;
+        left: revert;
+    }
 }
 
 
 @media only screen and (max-width: 32em) {
+    .hero-wrapper{
+        height: 100vh;
+        background-image: url("../images/mobile-hero-banner.png") ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
     h1{
         font-size: 3rem;
-    }
-    .social-icon-wrapper{
-        bottom: 15vh;
-        right: 2rem;
-        left: revert;
     }
     .social-icon-wrapper img{
        height: 48px;
