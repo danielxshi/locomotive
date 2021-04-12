@@ -532,8 +532,8 @@ h2{
 .neu-border img{
     padding: 1.75rem;
     box-shadow: inset 5px 5px 10px #242228, inset -5px -5px 10px #3e3a46;
-    margin-bottom: 0;
-    margin-top: 20vh;
+    /* margin-bottom: 0;
+    margin-top: 20vh; */
 }
 
 .project-cheer span{
@@ -618,6 +618,20 @@ header{
 }
 
 /* project details page */
+.more-projects-sub-nav .project-details-hero{
+    transition-duration: .3s;
+}
+
+.more-projects-sub-nav .project-details-hero:hover{
+    padding: 1.75rem;
+    box-shadow: inset 5px 5px 10px #242228, inset -5px -5px 10px #3e3a46;
+}
+
+/* !testing for bleeding footer */
+.full-bleed-footer-banner{
+    display: flex;
+}
+
 .bosstep-banner{
     /* The image used */
     background-image: url("../images/bosstep/bosstep-banner-2048x768.jpg");

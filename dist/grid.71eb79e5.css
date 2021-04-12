@@ -138,6 +138,19 @@
     grid-column-end: 3;
 }
 
+/* project navigation */
+.col-project-navigation-5-span-3{
+    grid-column-start: 5;
+    grid-column-end: 8;
+}
+
+.col-project-navigation-9-span-3{
+    grid-column-start: 9;
+    grid-column-end: 12;
+}
+
+/* end of product-details page */
+
 @media only screen and (min-width: 90em) {
     .grid-container{
         max-width: 90vw;
@@ -245,6 +258,14 @@
 }
 
 @media only screen and (max-width: 72em) {
+    .col-project-navigation-9-span-3 {
+        grid-column-start: 8;
+        grid-column-end: 12;
+    }
+    .col-project-navigation-5-span-3 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
     .project-details-side-heading{
         grid-column-start: 1;
         grid-column-end: -1;
@@ -346,6 +367,18 @@
         margin-left: 0;
     }
     .col-prototype-second-half {
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+}
+
+
+@media only screen and (max-width: 60em) {
+    .col-project-navigation-9-span-3 {
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+    .col-project-navigation-5-span-3 {
         grid-column-start: 2;
         grid-column-end: 12;
     }
