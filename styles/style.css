@@ -66,7 +66,8 @@ body{
     top: 0px;
     left: 0px;
     /* background: rgb(127 235 235 / 10%); */
-    background: rgb(4 29 116 / 35%);
+    /* background: rgb(4 29 116 / 35%); */
+    background: rgb(4 29 116 / 10%);
 }
 .overlay-cool{
     z-index: -1;
@@ -475,7 +476,8 @@ nav ul li a:hover{
     font-size: 1.5rem;
     color: #bebebe;
     display: block;
-    margin: 0 2rem 2rem;
+    margin: 0 2rem 2rem 0;
+    padding-left: 0;
   }
   
   .sidenav2 a:hover {
@@ -532,7 +534,16 @@ h2{
     animation: marquee 90s linear infinite;
     font-size: 160px;
     will-change: transform; 
-    /* animation-direction: normal; */
+}
+
+.no-select{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .project-cheer{
@@ -632,7 +643,7 @@ header{
 }
 .track-banner{
     /* The image used */
-    background-image: url("../images/track/track-banner-2048x768.png");
+    background-image: url("../images/track/moment-banner-2048x768.png");
   
     /* Full height */
     height: 100%;
