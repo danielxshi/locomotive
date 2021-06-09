@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'MADE';
+    src: url(MADE.otf);
+}
+
+@font-face {
+    font-family: 'madeItalic';
+    src: url(MadeItalic.otf);
+}
+
+@font-face {
+    font-family: 'madeBrush';
+    src: url(MadeBrush.otf);
+}
+
+
+@font-face {
+    font-family: 'madeOutlineItalic';
+    src: url(MadeOutlineItalic.otf);
+}
+
+$large-font: 10rem;
+
+$med-font: 5rem;
+
+$small-font: 2.5rem;
+
+$pfont: 1.25rem;
+
+p {
+    font-size: $pfont;
+    line-height: 200%;
+    letter-spacing: 0.03em;
+}
+
+.large-font{
+    font-size: $large-font;
+    font-weight: 100;
+}
+
+.med-font{
+    font-weight: 100;
+    font-size: $med-font;
+}
+
+.italic-font{
+    font-family: madeItalic;
+}
+
+.sub-heading{
+    font-size: $med-font;
+}
+
+.blue-font{
+    color: $blue;
+    font-weight: 100;
+}
+
+.black-font{
+    color: $black;
+}
+
+.outline-italic-font{
+    font-family: madeOutlineItalic;
+}
+
+.heavy-font{
+    font-weight: 700;
+}
+
+.center-text{
+    text-align: center;
+}

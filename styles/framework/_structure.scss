@@ -1,0 +1,29 @@
+section{
+    height: 140vh;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.center{
+    display: flex;
+}
+
+.center > *{
+    margin: auto;
+}
+
+.min-width{
+    width: min-content;
+}
+
+.vertical-align{
+    margin: auto 0;
+}
+
+.rel-margin-bot{
+    margin-bottom: $margin;
+}
+
+#section0{
+    height: 100vh;
+}

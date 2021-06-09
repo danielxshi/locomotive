@@ -21,5 +21,13 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "sass": "^1.32.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielxshi/locomotive.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielxshi/locomotive/issues"
+  },
+  "homepage": "https://github.com/danielxshi/locomotive#readme"
 }

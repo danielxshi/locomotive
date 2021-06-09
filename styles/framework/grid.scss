@@ -1,0 +1,30 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.max-grid-container{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-gap: 1.5em;
+    width: 100%;
+}
+
+.max-col{
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.col-contain{
+    grid-column-start: 2;
+    grid-column-end: 12;
+    height: 100%;
+}
+
+.personal{
+    .grid-container{
+        height: 100%;
+    }
+}
